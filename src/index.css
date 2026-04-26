@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700&family=Poppins:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  .font-noto {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .text-shadow-custom {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+}
+
+@keyframes flutter {
+  0%, 100% { transform: rotate(-5deg) translateY(0px) skewX(2deg); }
+  50% { transform: rotate(5deg) translateY(-2px) skewX(-2deg); }
+}
+
+.animate-flutter {
+  animation: flutter 2s ease-in-out infinite alternate;
+  transform-origin: top center;
+}
